@@ -16,9 +16,11 @@ function startGame() {
   rock.addEventListener("click", rememberResult);
   paper.addEventListener("click", rememberResult);
   scissors.addEventListener("click", rememberResult);
+  player1.classList.add("shake");
+  player2.classList.add("shake");
 }
 
-//TODO shake animation animation
+//TODO shake animation
 
 // player choice
 function rememberResult(e) {
@@ -48,7 +50,6 @@ function computerDecision() {
     player2.style.backgroundImage = scissorsImg;
     computer = "scissors";
   }
-
   console.log(computer);
   compareResults();
 }
@@ -135,4 +136,17 @@ function compareResults() {
     }, 1200);
   }
   console.log(result);
+
+  reshake();
+}
+
+function reshake() {
+  setTimeout(() => {
+    player1.classList.remove("shake");
+    player2.classList.remove("shake");
+    player1.offsetHeight;
+    player1.classList.add("shake");
+    player2.classList.add("shake");
+  }, 1300);
+  startGame();
 }
