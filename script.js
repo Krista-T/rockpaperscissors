@@ -48,19 +48,19 @@ function compareResults() {
     draw.classList.remove("hidden");
     setTimeout(() => {
       draw.classList.add("hidden");
-    }, 1500);
+    }, 1200);
   } else if (computer == "rock" && player == "paper") {
     result = "win";
     win.classList.remove("hidden");
     setTimeout(() => {
       win.classList.add("hidden");
-    }, 1500);
+    }, 1200);
   } else if (computer == "rock" && player == "scissors") {
     result = "lose";
     lose.classList.remove("hidden");
     setTimeout(() => {
       lose.classList.add("hidden");
-    }, 1500);
+    }, 1200);
   }
 
   if (computer == "paper" && player == "rock") {
@@ -68,38 +68,38 @@ function compareResults() {
     lose.classList.remove("hidden");
     setTimeout(() => {
       lose.classList.add("hidden");
-    }, 1500);
+    }, 1200);
   } else if (computer == "paper" && player == "paper") {
     result = "draw";
     draw.classList.remove("hidden");
     setTimeout(() => {
       draw.classList.add("hidden");
-    }, 1500);
+    }, 1200);
   } else if (computer == "paper" && player == "scissors") {
     result = "win";
     win.classList.remove("hidden");
     setTimeout(() => {
       win.classList.add("hidden");
-    }, 1500);
+    }, 1200);
   }
   if (computer == "scissors" && player == "rock") {
     result = "win";
     win.classList.remove("hidden");
     setTimeout(() => {
       win.classList.add("hidden");
-    }, 1500);
+    }, 1200);
   } else if (computer == "scissors" && player == "paper") {
     result = "lose";
     lose.classList.remove("hidden");
     setTimeout(() => {
       lose.classList.add("hidden");
-    }, 1500);
+    }, 1200);
   } else if (computer == "scissors" && player == "scissors") {
     result = "draw";
     draw.classList.remove("hidden");
     setTimeout(() => {
       draw.classList.add("hidden");
-    }, 1500);
+    }, 1200);
   }
   console.log(result);
 }
